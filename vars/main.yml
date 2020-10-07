@@ -5,6 +5,8 @@ __lm_sensors_package_os:
   debian: lm-sensors
   redhat: lm_sensors
   archlinux: lm_sensors
+  pop: lm-sensors
+  ubuntu: lm-sensors
 
 __lm_sensors_package: "{{
     (__lm_sensors_package_os[ansible_os_family | lower]) |
